@@ -24,3 +24,26 @@ console.log(data.replace(/\r/g, '').split('\n'));
  const fruits = ['orange', 'apple']
 
  console.log(fruits.length);
+
+
+
+
+
+
+
+
+
+
+
+ function addName(){
+    fs.appendFile('./names.txt', 'John Doe\n', (error) => {
+        if(error){
+            return console.log(error);
+        }
+        console.log('Name added');
+    });
+ }
+
+
+
+ 
