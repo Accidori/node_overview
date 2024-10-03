@@ -1,49 +1,116 @@
-const fs = require ('fs');
-
-fs.readFile('./names.txt', 'utf8', (error, data) => {
-    if(error){
-        return console.log(error);
-    }
-console.log(data.replace(/\r/g, '').split('\n')); 
-
-});
-
- function sumArray(arr){
-    return arr.reduce((0, n) => 0 += n, 0);
- }
-
- function getEven(arr){
-    return arr.filter((n) => (n % 2) === 0);
- }
-
- const result1 = getEven([7, 2, 10, 5, 9, 13, 100]);
- const result2 = getEven([100, 200, 75, 80, 1000]);
- 
- console.log(result1, result2);
- 
- const fruits = ['orange', 'apple']
-
- console.log(fruits.length);
+const showMenu = require('./lib/showMenu.js');
 
 
-
-
-
-
-
-
-
-
-
- function addName(){
-    fs.appendFile('./names.txt', 'John Doe\n', (error) => {
-        if(error){
-            return console.log(error);
-        }
-        console.log('Name added');
-    });
- }
-
-
+// //put these in files that need them
+// const fs = require('fs');
+// const inquirer = require('inquirer');
+// const art = require('figlet');
 
  
+
+
+
+
+
+
+
+
+
+
+
+showMenu();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const languages = {
+//     {
+//         id: 1
+//         name: 'Me',
+//         age: 30,
+//         programmingLanguage: 'JavaScript',
+//     }
+// }
+
+// const promise= inquirer.prompt({
+//     message:"Please type your name.",
+//     name: 'userName',
+//     type: 'input',
+// },
+// {
+//     message:"Please type your age.",
+//     name: 'userAge',
+//     type: 'input',  
+//     validate: function(value) {
+//         if(!isNaN(value)){
+//             return 'Please enter a number';
+//         }
+//         return true
+//     },
+// },
+// {
+//     message:"Please choose your favorite programming language.",
+//     name: 'progranmmingLanguage',
+//     type: 'list',
+//     choices: ['JavaScript', 'Python']
+// },
+// {
+//     message:"Please select your food catagories.",
+//     name: 'foodCatagories',
+//     type: 'checkbox',  
+//     choices: ['American', 'Chinese', 'Mexican', 'Korean','Italian'],
+// })
+
+
+
+// questionPromise.then(answerObj => { 
+//     console.log(answerObj)
+// });
+
+
+
+
+
