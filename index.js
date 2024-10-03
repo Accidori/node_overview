@@ -1,11 +1,11 @@
-const showMenu = require('./lib/showMenu.js');
+const showMenu = require('./showMenu');
 
 
-// //put these in files that need them
-// const fs = require('fs');
-// const inquirer = require('inquirer');
-// const art = require('figlet');
-
+//put these in files that need them
+const fs = require('fs');
+const inquirer = require('inquirer');
+const art = require('figlet');
+let started = false;
  
 
 
